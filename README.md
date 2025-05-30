@@ -7,7 +7,7 @@ _**Redux is a state management library that allows global state to be accessed f
 
 <img width="626" alt="image" src="https://github.com/user-attachments/assets/eab2197e-603f-4fb8-8e4f-ebb05ee965a7" />
 
-## Creating State
+## Creating Slice
 1. Define State Type
 2. Initial State
 3. Create the Slice
