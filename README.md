@@ -7,6 +7,30 @@ _**Redux is a state management library that allows global state to be accessed f
 
 <img width="626" alt="image" src="https://github.com/user-attachments/assets/eab2197e-603f-4fb8-8e4f-ebb05ee965a7" />
 
+## Creating State
+1. Define State Type
+2. Initial State
+3. Create the Slice
+4. Add related actions in reducer
+5. export the actions and reducers to be available in store
+
+## Benefits of Using Redux
+
+- **state.value += 1; when we do this, it seems like we are directly mutating the state. As we know state is immutable in React, can never be directly changed, needs to be copied, updated then saved. But this code, due to CreateSlice from Redux tool kit this line automatically creates a copy of the state and updates it and save the copy. This is beneficial to us as we do not have to do it manually, but at an expense of looking confusing.**
+  - If using plain Redux, you’d need to do something like:
+
+```
+return { ...state, value: state.value + 1 };
+```
+- Once the Slice is created, it’s easier to create any number of actions, just need to define the reducer and export the action and use it through dispatch
+- Redux Devtools is helpful to see what changes happened to the state, we can also jump to an action back in time, super super helpful when debugging
+
+## Redux Devtools
+
+- get it from chrome
+- super super important when debugging
+- it will automatically will connect to your Redux store, and tell you everything happening in your application
+
 ## **Understanding Redux Toolkit – Core Concepts**
 
 ## **📦 Three Core Concepts of Redux:**
@@ -81,19 +105,4 @@ _**Redux is a state management library that allows global state to be accessed f
     ```
 
 
-## Redux Devtools
 
-- get it from chrome
-- super super important when debugging
-- it will automatically will connect to your Redux store, and tell you everything happening in your application
-
-## Benefits of Using Redux
-
-- **state.value += 1; when we do this, it seems like we are directly mutating the state. As we know state is immutable in React, can never be directly changed, needs to be copied, updated then saved. But this code, due to CreateSlice from Redux tool kit this line automatically creates a copy of the state and updates it and save the copy. This is beneficial to us as we do not have to do it manually, but at an expense of looking confusing.**
-  - If using plain Redux, you’d need to do something like:
-
-```
-return { ...state, value: state.value + 1 };
-```
-- Once the Slice is created, it’s easier to create any number of actions, just need to define the reducer and export the action and use it through dispatch
-- Redux Devtools is helpful to see what changes happened to the state, we can also jump to an action back in time, super super helpful when debugging
