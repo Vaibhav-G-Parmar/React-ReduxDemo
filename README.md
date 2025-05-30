@@ -25,11 +25,11 @@ return { ...state, value: state.value + 1 };
 - Once the Slice is created, it’s easier to create any number of actions, just need to define the reducer and export the action and use it through dispatch
 - Redux Devtools is helpful to see what changes happened to the state, we can also jump to an action back in time, super super helpful when debugging
 
-## Redux Devtools
+### Redux Devtools
 
 - get it from chrome
-- super super important when debugging
-- it will automatically will connect to your Redux store, and tell you everything happening in your application
+- super important when debugging
+- it will automatically connect to your Redux store, and tell you everything happening in your application
 
 ## **Understanding Redux Toolkit – Core Concepts**
 
